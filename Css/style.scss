@@ -54,8 +54,8 @@ background-color: $primary_2;
         top: 50%;
         transform: translate(2%,-50%);
     
-        width: 350px;
-        height: 56px;
+        width: 310px;
+        height: 54px;
     }
 
     &__phone_menu{
@@ -84,8 +84,7 @@ background-color: $primary_2;
         position: relative;
         display: block;
     
-        // float: left; 
-        right: 4rem;    
+        right: 12rem;    
     
         font-family: $Font_Raleway ;
         font-size: 26px;
@@ -110,74 +109,104 @@ background-color: $primary_2;
 
 
 
-// @media (max-width: 600px){
-//     #Navbar{
-    
-//         .navbar__logo{        
-//             left: 2%;
-//             top: 50%;
-//             transform: translate(2%,-50%);
-        
-//             width: 275px;
-//             height: 50px;
-//         }
-    
-//         #navbar__phone_menu{
-//             display: block;
+@media (max-width: 1600px){
+    .navbar{
+        &__logo{
+            width: 300px;
+            height: 54px;
+        }
 
-//             background-color: #7B9295;
-//             border: 1px solid black;
-//             border-radius: 6px;
-//         }
-        
-//         .navbar__btn{
-//             display: none;
-//         } 
-        
-//     }
-// }
+        &__btn{
+            right: 7rem;    
+        } 
+    }
+}
 
-// @media (max-width: 1250px){
-//     #Navbar{
+@media (max-width: 1000px){
+    .navbar{
+        &__logo{
+            width: 260px;
+            height: 50px;
+           
+            left: 1%;
+            top: 50%;
+            transform: translate(1%,-50%);
+        }   
+
+        &__btn{
+            right: 2rem;    
+        } 
+    }
+}
+
+@media (max-width: 750px){
+    .navbar{.navbar{
     
-//         .navbar__logo{        
-//             left: 2%;
-//             top: 50%;
-//             transform: translate(2%,-50%);
-        
-//             width: 275px;
-//             height: 50px;
-//         }
-      
-        
-//         .navbar__btn{
-//             position: relative;
-//             display: block;
-        
-//             float: left;
-//             right: 54%;    
-        
-//             font-family: $Font_Raleway ;
-//             font-size: 26px;
-        
-//             margin-top: 10px;
-//             margin-bottom: 10px;
-//             margin-left: 16px;
-//             margin-right: 16px;
+        &__logo{
+            width: 260px;
+            height: 50px;
+           
+            left: 1%;
+            top: 50%;
+            transform: translate(1%,-50%);
+        }    
+
+        &__phone_menu{
+            position: absolute;
+            display: block;
             
-//             color: #2f4042;
-//             text-decoration: none;
-//         } 
+            right: 10%;
+            top: 50%;
+            transform: translate(10%,-50%);
+        
+            width: 50px;
+            height: 50px; 
 
-//         .navbar__btn:hover{
-//             color: rgb(211, 85, 106);
-//         } 
+            border: 2px solid black;
+            border-radius: 8px;
+        }
     
-//         .navbar__btn--active{
-//            color: blanchedalmond;
-//         }   
-//     }
-// }
+        // &__container{
+        //     margin: 0;
+        //     padding: 0;
+        //     display: flex;
+        //     justify-content: end;
+        //     align-items: center;
+        //     width: 100%;
+        //     height: 100%;
+        // }
+    
+        &__btn{
+            position: relative;
+            display: none;
+        
+            right: 12rem;    
+        
+            font-family: $Font_Raleway ;
+            font-size: 26px;
+        
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 16px;
+            margin-right: 16px;
+            
+            color: #2f4042;
+            text-decoration: none;
+        } 
+    
+        // &__btn:hover{
+        //     color: rgb(211, 85, 106);
+        // } 
+    
+        // &__btn--active{
+        //    color: blanchedalmond;
+        // }   
+    }
+    
+    }
+}
+
+
 
 
 

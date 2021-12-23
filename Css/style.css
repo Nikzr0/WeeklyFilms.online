@@ -29,8 +29,8 @@ body {
   top: 50%;
   -webkit-transform: translate(2%, -50%);
           transform: translate(2%, -50%);
-  width: 350px;
-  height: 56px;
+  width: 310px;
+  height: 54px;
 }
 
 .navbar__phone_menu {
@@ -63,7 +63,7 @@ body {
 .navbar__btn {
   position: relative;
   display: block;
-  right: 4rem;
+  right: 12rem;
   font-family: Raleway;
   font-size: 26px;
   margin-top: 10px;
@@ -80,5 +80,65 @@ body {
 
 .navbar__btn--active {
   color: blanchedalmond;
+}
+
+@media (max-width: 1600px) {
+  .navbar__logo {
+    width: 300px;
+    height: 54px;
+  }
+  .navbar__btn {
+    right: 7rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar__logo {
+    width: 260px;
+    height: 50px;
+    left: 1%;
+    top: 50%;
+    -webkit-transform: translate(1%, -50%);
+            transform: translate(1%, -50%);
+  }
+  .navbar__btn {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar .navbar__logo {
+    width: 260px;
+    height: 50px;
+    left: 1%;
+    top: 50%;
+    -webkit-transform: translate(1%, -50%);
+            transform: translate(1%, -50%);
+  }
+  .navbar .navbar__phone_menu {
+    position: absolute;
+    display: block;
+    right: 10%;
+    top: 50%;
+    -webkit-transform: translate(10%, -50%);
+            transform: translate(10%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+  .navbar .navbar__btn {
+    position: relative;
+    display: none;
+    right: 12rem;
+    font-family: Raleway;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+    color: #2f4042;
+    text-decoration: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
