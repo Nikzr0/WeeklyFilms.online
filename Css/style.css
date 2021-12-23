@@ -6,11 +6,11 @@
   margin: 0;
 }
 
-#home_background {
+body {
   background-color: #8DA6B4;
 }
 
-#Navbar {
+.navbar {
   position: fixed;
   top: 0%;
   right: 0%;
@@ -22,7 +22,7 @@
           box-shadow: 0px 0.5px 10px #000;
 }
 
-#Navbar .navbar__logo {
+.navbar__logo {
   position: absolute;
   display: block;
   left: 2%;
@@ -33,7 +33,7 @@
   height: 56px;
 }
 
-#Navbar #navbar__phone_menu {
+.navbar__phone_menu {
   position: absolute;
   display: none;
   right: 10%;
@@ -44,7 +44,7 @@
   height: 50px;
 }
 
-#Navbar #navbar__container {
+.navbar__container {
   margin: 0;
   padding: 0;
   display: -webkit-box;
@@ -60,10 +60,10 @@
   height: 100%;
 }
 
-#Navbar .navbar__btn {
+.navbar__btn {
   position: relative;
   display: block;
-  right: 3rem;
+  right: 4rem;
   font-family: Raleway;
   font-size: 26px;
   margin-top: 10px;
@@ -74,11 +74,11 @@
   text-decoration: none;
 }
 
-#Navbar .navbar__btn:hover {
+.navbar__btn:hover {
   color: #d3556a;
 }
 
-#Navbar .navbar__btn--active {
+.navbar__btn--active {
   color: blanchedalmond;
 }
 /*# sourceMappingURL=style.css.map */
