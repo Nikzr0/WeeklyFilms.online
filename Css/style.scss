@@ -19,6 +19,11 @@ $Font_Comfortaa: Comfortaa;
 $Font_Raleway: Raleway;
 
 //Size
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 
 // Backgrounds
 
@@ -34,10 +39,12 @@ background-color: $primary_2;
     top: 0%;
     right: 0%;
 
+    // justify-content: space-between;
+    // align-items: center;
+
+
     width: 100%;
     height: 80px;
-
-    margin: 0%;
 
     background-color: $primary_1;
     border-bottom: 1.9px solid black;
@@ -67,20 +74,29 @@ background-color: $primary_2;
         height: 50px; 
     }
 
-    &__container{
-        vertical-align: middle;
+    #navbar__container{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        // vertical-align: middle;
     }
-    
+
+    // .navbar__btn__container{
+    //     list-style: none;
+    //     margin: 0;
+    //     padding: 0;
+    // }
+
     .navbar__btn{
         position: relative;
         display: block;
     
-        float: left;
-        left: 60%;
-        
-        // top: 50%;
-        // transform: translate(0%,0%);
-        
+        // float: left; 
+        right: 3rem;    
     
         font-family: $Font_Raleway ;
         font-size: 26px;
@@ -89,40 +105,90 @@ background-color: $primary_2;
         margin-bottom: 10px;
         margin-left: 16px;
         margin-right: 16px;
-
+        
         color: #2f4042;
+        text-decoration: none;
     } 
-    
+
+    .navbar__btn:hover{
+        color: rgb(211, 85, 106);
+    } 
+
+    .navbar__btn--active{
+       color: blanchedalmond;
+    }   
 }
 
 
 
-@media (max-width: 600px){
-    #Navbar{
+// @media (max-width: 600px){
+//     #Navbar{
     
-        .navbar__logo{        
-            left: 2%;
-            top: 50%;
-            transform: translate(2%,-50%);
+//         .navbar__logo{        
+//             left: 2%;
+//             top: 50%;
+//             transform: translate(2%,-50%);
         
-            width: 275px;
-            height: 50px;
-        }
+//             width: 275px;
+//             height: 50px;
+//         }
     
-        #navbar__phone_menu{
-            display: block;
+//         #navbar__phone_menu{
+//             display: block;
 
-            background-color: #7B9295;
-            border: 1px solid black;
-            border-radius: 6px;
-        }
+//             background-color: #7B9295;
+//             border: 1px solid black;
+//             border-radius: 6px;
+//         }
         
-        .navbar__btn{
-            display: none;
-        } 
+//         .navbar__btn{
+//             display: none;
+//         } 
         
-    }
-}
+//     }
+// }
+
+// @media (max-width: 1250px){
+//     #Navbar{
+    
+//         .navbar__logo{        
+//             left: 2%;
+//             top: 50%;
+//             transform: translate(2%,-50%);
+        
+//             width: 275px;
+//             height: 50px;
+//         }
+      
+        
+//         .navbar__btn{
+//             position: relative;
+//             display: block;
+        
+//             float: left;
+//             right: 54%;    
+        
+//             font-family: $Font_Raleway ;
+//             font-size: 26px;
+        
+//             margin-top: 10px;
+//             margin-bottom: 10px;
+//             margin-left: 16px;
+//             margin-right: 16px;
+            
+//             color: #2f4042;
+//             text-decoration: none;
+//         } 
+
+//         .navbar__btn:hover{
+//             color: rgb(211, 85, 106);
+//         } 
+    
+//         .navbar__btn--active{
+//            color: blanchedalmond;
+//         }   
+//     }
+// }
 
 
 
