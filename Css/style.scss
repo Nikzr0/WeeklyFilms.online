@@ -33,9 +33,10 @@ background-color: $primary_2;
 
 
 // Navbar
-
+  //TODO
 .navbar{
     position: fixed;
+    display: flex;
     top: 0%;
     right: 0%;
 
@@ -70,6 +71,7 @@ background-color: $primary_2;
         height: 50px; 
     }
 
+
     &__container{
         margin: 0;
         padding: 0;
@@ -82,7 +84,8 @@ background-color: $primary_2;
 
     &__btn{
         position: relative;
-        display: block;
+        // display: block;
+        display: flex;
     
         right: 12rem;    
     
@@ -140,7 +143,7 @@ background-color: $primary_2;
 }
 
 @media (max-width: 750px){
-    .navbar{.navbar{
+    .navbar{
     
         &__logo{
             width: 260px;
@@ -166,34 +169,51 @@ background-color: $primary_2;
             border-radius: 8px;
         }
     
-        // &__container{
-        //     margin: 0;
-        //     padding: 0;
-        //     display: flex;
-        //     justify-content: end;
-        //     align-items: center;
-        //     width: 100%;
-        //     height: 100%;
-        // }
+        &__container{
+            top: 80px;
+            margin: 0;
+            padding: 0;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            width: 100%;
+            height: 100%;
+        }
     
+        &__btn, &__container{
+            top: 135px;
+
+            width: 100%;
+            left: 0%;
+           
+
+            flex-direction: column;
+
+            justify-content: center;
+            
+            border: 2px solid black;
+        }
+        
+
         &__btn{
             position: relative;
-            display: none;
-        
-            right: 12rem;    
+            // display: block;
         
             font-family: $Font_Raleway ;
             font-size: 26px;
-        
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: 16px;
-            margin-right: 16px;
+            text-align: center;
+            // margin-top: 10px;
+            // margin-bottom: 10px;
+            // margin-left: 16px;
+            // margin-right: 16px;
+
+            margin: 0px;
+            padding: 6px;
             
             color: #2f4042;
             text-decoration: none;
         } 
-    
+        
         // &__btn:hover{
         //     color: rgb(211, 85, 106);
         // } 
@@ -201,8 +221,6 @@ background-color: $primary_2;
         // &__btn--active{
         //    color: blanchedalmond;
         // }   
-    }
-    
     }
 }
 
