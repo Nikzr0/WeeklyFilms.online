@@ -84,7 +84,7 @@ background-color: $primary_2;
 
     &__btn{
         position: relative;
-        // display: block;
+        display: block;
         display: flex;
     
         right: 12rem;    
@@ -108,9 +108,32 @@ background-color: $primary_2;
     &__btn--active{
        color: blanchedalmond;
     }   
+
 }
 
 
+.btn{
+    position: absolute;
+    display: block;
+    left: 50px;
+    top: 300px;
+}
+
+.p{
+    position: absolute;
+    display: block;
+    top: 400px;
+
+}
+
+.pb{
+    position: absolute;
+    display: block;
+    top: 350px;
+    left: 30px;
+    font-size: 20px;
+border: 2px solid black;
+}
 
 @media (max-width: 1600px){
     .navbar{
@@ -170,12 +193,8 @@ background-color: $primary_2;
         }
     
         &__container{
-            top: 80px;
             margin: 0;
             padding: 0;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
             width: 100%;
             height: 100%;
         }
@@ -191,37 +210,27 @@ background-color: $primary_2;
 
             justify-content: center;
             
-            border: 2px solid black;
+            // border: 2px solid black;
         }
         
+        &__btn{
+            border: 2px solid black;
+        }
 
         &__btn{
             position: relative;
-            // display: block;
+            display: block;
         
             font-family: $Font_Raleway ;
             font-size: 26px;
             text-align: center;
-            // margin-top: 10px;
-            // margin-bottom: 10px;
-            // margin-left: 16px;
-            // margin-right: 16px;
 
             margin: 0px;
             padding: 6px;
             
             background-color: rgb(178, 211, 212);
-            color: #2f4042;
-            text-decoration: none;
+
         } 
-        
-        // &__btn:hover{
-        //     color: rgb(211, 85, 106);
-        // } 
-    
-        // &__btn--active{
-        //    color: blanchedalmond;
-        // }   
     }
 }
 

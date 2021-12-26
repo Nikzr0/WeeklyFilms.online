@@ -65,6 +65,7 @@ body {
 
 .navbar__btn {
   position: relative;
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,6 +86,28 @@ body {
 
 .navbar__btn--active {
   color: blanchedalmond;
+}
+
+.btn {
+  position: absolute;
+  display: block;
+  left: 50px;
+  top: 300px;
+}
+
+.p {
+  position: absolute;
+  display: block;
+  top: 400px;
+}
+
+.pb {
+  position: absolute;
+  display: block;
+  top: 350px;
+  left: 30px;
+  font-size: 20px;
+  border: 2px solid black;
 }
 
 @media (max-width: 1600px) {
@@ -133,7 +156,6 @@ body {
     border-radius: 8px;
   }
   .navbar__container {
-    top: 80px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -150,18 +172,19 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .navbar__btn {
     border: 2px solid black;
   }
   .navbar__btn {
     position: relative;
+    display: block;
     font-family: Raleway;
     font-size: 26px;
     text-align: center;
     margin: 0px;
     padding: 6px;
     background-color: #b2d3d4;
-    color: #2f4042;
-    text-decoration: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
