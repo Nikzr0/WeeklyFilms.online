@@ -25,6 +25,13 @@ menu.addEventListener("click", () => {
     }
 })
 
+// const container = dosument.getElementsByClassName("lastClone")[0];
+
+// container.addEventListener("onmousedown", () => {
+
+//     document.getElementById('slide_show__btn1').style.display = "none";
+// })
+
 
 const SlideShow = document.querySelector('.slide_show__slide');
 const SlideShowImgs = document.querySelectorAll('.slide_show__slide img');

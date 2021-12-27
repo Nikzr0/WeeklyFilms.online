@@ -108,20 +108,22 @@ body {
 
 #slide_show__btn1 {
   position: absolute;
+  display: block;
   left: 31%;
   top: 45%;
   width: 30px;
   height: 30px;
-  background-color: yellow;
+  fill: white;
 }
 
 #slide_show__btn2 {
   position: absolute;
+  display: block;
   left: 67%;
   top: 45%;
-  background-color: yellow;
   width: 30px;
   height: 30px;
+  fill: white;
 }
 
 @media (max-width: 1600px) {
