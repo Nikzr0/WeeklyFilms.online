@@ -178,7 +178,7 @@ body {
   }
   .navbar__btn {
     position: relative;
-    display: none;
+    display: block;
     font-family: Raleway;
     font-size: 26px;
     text-align: center;
