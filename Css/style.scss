@@ -114,13 +114,13 @@ background-color: $primary_2;
 // Slide Show
 .slide_show__container{
     position: absolute;
-    width: 40%;
+    width: 750px;
 
     left: 50%;
     top: 20%;
     transform: translate(-50%);
     // margin: 200px;
-    //overflow: hidden; // Error
+    overflow: hidden; // Error
     border: 2px solid rgb(235, 133, 226);
 }
 
@@ -130,35 +130,24 @@ background-color: $primary_2;
     height: 500px;
 }
 
-// .slide_show__imgs{
-//     width: 800px;
-//     height: 500px;
-//     // position: relative;
-//     // max-width: 70%;
-// }
-
-// #lastClone{
-//     width: 780px;
-//     height: 500px;
-// }
-
-// #picture1{
-//     width: 800px;
-//     height: 500px;
-// }
-
 #slide_show__btn1{
     position: absolute;
-    left: 10%;
-    top: 80%;
+    left: 31%;
+    top: 45%;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
 }
 
 #slide_show__btn2{
     position: absolute;
-    left: 15%;
-    top: 80%;
-    padding: 3px;
+    left: 67%;
+    top: 45%;
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
 }
+
 
 @media (max-width: 1600px){
     .navbar{

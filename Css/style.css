@@ -90,11 +90,12 @@ body {
 
 .slide_show__container {
   position: absolute;
-  width: 40%;
+  width: 750px;
   left: 50%;
   top: 20%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  overflow: hidden;
   border: 2px solid #eb85e2;
 }
 
@@ -107,15 +108,20 @@ body {
 
 #slide_show__btn1 {
   position: absolute;
-  left: 10%;
-  top: 80%;
+  left: 31%;
+  top: 45%;
+  width: 30px;
+  height: 30px;
+  background-color: yellow;
 }
 
 #slide_show__btn2 {
   position: absolute;
-  left: 15%;
-  top: 80%;
-  padding: 3px;
+  left: 67%;
+  top: 45%;
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 1600px) {

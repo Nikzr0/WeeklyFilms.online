@@ -38,6 +38,9 @@ const size = SlideShowImgs[0].clientWidth;
 SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
 
 prevBtn.addEventListener('click', () => {
+    if(counter <= 0){
+        return;
+    }
 
     SlideShow.style.transition = "transform 0.4s ease-in-out";
     counter--;
@@ -45,23 +48,26 @@ prevBtn.addEventListener('click', () => {
 })
 
 nextBtn.addEventListener('click', () => {
-
+    if(counter >= SlideShowImgs.length - 1)
+    {
+        return;
+    }
     SlideShow.style.transition = "transform 0.4s ease-in-out";
     counter++;
     SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
 })
 
-// SlideShow.addEventListener('transitionend', ()=> {
-//     if(SlideShowImgs[counter].id === 'lastClone'){
-//         SlideShow.style.transition = "none";
-//         counter = SlideShowImgs.length - 2;
-//         SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
-//     }
+SlideShow.addEventListener('transitionend', ()=> {
+    if(SlideShowImgs[counter].id === 'lastClone'){
+        SlideShow.style.transition = "none";
+        counter = SlideShowImgs.length - 2;
+        SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
+    }
 
-//     if(SlideShowImgs[counter].id === 'firstClone'){
-//         SlideShow.style.transition = "none";
-//         counter = SlideShowImgs.length - counter;
-//         SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
-//     }
-// })
+    if(SlideShowImgs[counter].id === 'firstClone'){
+        SlideShow.style.transition = "none";
+        counter = SlideShowImgs.length - counter;
+        SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
+    }
+})
 
