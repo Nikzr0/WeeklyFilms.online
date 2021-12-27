@@ -24,3 +24,15 @@ menu.addEventListener("click", () => {
 
     }
 })
+
+
+const SlideShow = document.querySelector('.slide_show__slide');
+const SlideShowImgs = document.querySelectorAll('.slide_show__slide img');
+
+const prevBtn = document.querySelector('#slide_show__btn1');
+const nextBtn = document.querySelector ('#slide_show__btn2');
+
+let counter = 1;
+const size = carouselImages[0].clientwidth;
+              
+SlideShow.style.transform = "translateX(" (-size * counter) + "px)";
