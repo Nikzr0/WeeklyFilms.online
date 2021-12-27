@@ -111,28 +111,21 @@ background-color: $primary_2;
 
 }
 
-
-.btn{
-    position: absolute;
-    display: block;
-    left: 50px;
-    top: 300px;
+// Slide Show
+.slide_show__container{
+    width: 60%;
+    margin: auto;
+    //overflow: hidden; // Error
+    border: 2px solid rgb(235, 133, 226);
 }
-
-.p{
-    position: absolute;
-    display: block;
-    top: 400px;
-
+.slide_show__slide{
+    display: flex;
+    width: 100%;
+    height: 500px;
 }
-
-.pb{
-    position: absolute;
-    display: block;
-    top: 350px;
-    left: 30px;
-    font-size: 20px;
-border: 2px solid black;
+.slide_show__imgs{
+    // position: relative;
+    // max-width: 70%;
 }
 
 @media (max-width: 1600px){
