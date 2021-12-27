@@ -89,8 +89,12 @@ body {
 }
 
 .slide_show__container {
-  width: 60%;
-  margin: auto;
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   border: 2px solid #eb85e2;
 }
 
@@ -98,8 +102,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   height: 500px;
+}
+
+#slide_show__btn1 {
+  position: absolute;
+  left: 10%;
+  top: 80%;
+}
+
+#slide_show__btn2 {
+  position: absolute;
+  left: 15%;
+  top: 80%;
+  padding: 3px;
 }
 
 @media (max-width: 1600px) {
