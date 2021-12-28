@@ -23,21 +23,14 @@ menu.addEventListener("click", () => {
         }
 
     }
-})
-
-// const container = dosument.getElementsByClassName("lastClone")[0];
-
-// container.addEventListener("onmousedown", () => {
-
-//     document.getElementById('slide_show__btn1').style.display = "none";
-// })
+});
 
 
 const SlideShow = document.querySelector('.slide_show__slide');
 const SlideShowImgs = document.querySelectorAll('.slide_show__slide img');
 
-const prevBtn = document.querySelector('#slide_show__btn1');
-const nextBtn = document.querySelector('#slide_show__btn2');
+const prevBtn = document.querySelector('.slide_show__btn1');
+const nextBtn = document.querySelector('.slide_show__btn2');
 
 let counter = 1;
 const size = SlideShowImgs[0].clientWidth;
@@ -76,5 +69,5 @@ SlideShow.addEventListener('transitionend', ()=> {
         counter = SlideShowImgs.length - counter;
         SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
     }
-})
+});
 
