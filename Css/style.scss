@@ -39,6 +39,8 @@ background-color: $primary_2;
     top: 0%;
     right: 0%;
 
+    z-index: 99;
+
     width: 100%;
     height: 80px;
 
@@ -282,5 +284,58 @@ background-color: $primary_2;
             background-color: rgb(178, 211, 212);
 
         } 
+    }
+
+    .slide_show__container{
+        position: absolute;
+        width: 380px;
+    
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%);
+        // margin: 200px;
+        overflow: hidden; // Error if the imgs have different width!
+        border: 2px solid rgb(235, 133, 226);
+    }
+    
+    .slide_show__slide{
+        display: flex;
+        // width: 400px;
+        height: 260px;
+        // border: 2px solid blue;
+    }
+    
+    .slide_show__btn1{
+        position: absolute;
+        display: block;
+        left: 14%;
+        top: 55%;
+        width: 30px;
+        height: 30px;
+        fill: white;
+        transform: scale(1.3);
+        // border: 2px solid brown;
+        border-radius: 20px;
+    }
+    
+    .slide_show__btn2{
+        position: absolute;
+        display: block;
+        left: 80%;
+        top: 55%;
+        width: 30px;
+        height: 30px;
+        fill: white;
+        transform: scale(1.3);
+        padding-left: 3px;
+        padding-top: 1px;
+        // border: 2px solid brown;
+        border-radius: 20px;
+    }
+
+
+    .slide_show__btn1:hover, .slide_show__btn2:hover{
+         border: 2px solid rgb(255, 255, 255);
+
     }
 };
