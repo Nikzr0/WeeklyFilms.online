@@ -134,6 +134,7 @@ background-color: $primary_2;
 
 .prev_btn_container{
     position: absolute;
+    display: none;
     left: 1%;
     top: 48%;
     z-index: 10;
@@ -141,6 +142,7 @@ background-color: $primary_2;
 
 .next_btn_container{
     position: absolute;
+    display: none;
     right: 6%;
     top: 48%;
     z-index: 10;
@@ -171,12 +173,17 @@ background-color: $primary_2;
 }
 
 .slide_show__container:hover  .prev_btn_container{
-    display: none;
+    display: block;
 }
 
 .slide_show__container:hover  .next_btn_container{
-    display: none;
+    display: block;
 }
+
+.prev_btn_container, .next_btn_container{
+    animation: transitionIn 1.5s;
+}
+
 
 // Slide Show Points
 .p1{
@@ -186,25 +193,18 @@ background-color: $primary_2;
     margin-left: 40px;
     width: 30px;
     height: 30px;
-   background-color: blue;
-}
-.slide_show__lines{
-    position: relative;
-    top: 80%;
-
-    width: 35px;
-    height: 50px;
-
-    float:left;
-    margin-left: 70px;
-}
-.slide_show_container{
-    position:absolute;
-    left: 36%;
-    top: 75%;
 }
 
-
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-18deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+};
 
 @media (max-width: 1600px){
     .navbar{

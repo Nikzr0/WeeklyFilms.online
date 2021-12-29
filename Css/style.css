@@ -109,6 +109,7 @@ body {
 
 .prev_btn_container {
   position: absolute;
+  display: none;
   left: 1%;
   top: 48%;
   z-index: 10;
@@ -116,6 +117,7 @@ body {
 
 .next_btn_container {
   position: absolute;
+  display: none;
   right: 6%;
   top: 48%;
   z-index: 10;
@@ -146,11 +148,16 @@ body {
 }
 
 .slide_show__container:hover .prev_btn_container {
-  display: none;
+  display: block;
 }
 
 .slide_show__container:hover .next_btn_container {
-  display: none;
+  display: block;
+}
+
+.prev_btn_container, .next_btn_container {
+  -webkit-animation: transitionIn 1.5s;
+          animation: transitionIn 1.5s;
 }
 
 .p1 {
@@ -160,22 +167,32 @@ body {
   margin-left: 40px;
   width: 30px;
   height: 30px;
-  background-color: blue;
 }
 
-.slide_show__lines {
-  position: relative;
-  top: 80%;
-  width: 35px;
-  height: 50px;
-  float: left;
-  margin-left: 70px;
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-18deg);
+            transform: rotateX(-18deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
 }
 
-.slide_show_container {
-  position: absolute;
-  left: 36%;
-  top: 75%;
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-18deg);
+            transform: rotateX(-18deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
 }
 
 @media (max-width: 1600px) {

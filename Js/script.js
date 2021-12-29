@@ -35,7 +35,15 @@ const nextBtn = document.querySelector('.next_btn');
 let counter = 1;
 const size = SlideShowImgs[0].clientWidth;
 
-SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
+//TODO Checked problem!!!
+
+// const b1 = document.getElementById("radio1");
+// const b2 = document.getElementById("radio2");
+// const b3 = document.getElementById("radio3");
+// const b4 = document.getElementById("radio4");
+
+// const rr7 = document.getElementsByClassName("slides");
+
 
 prevBtn.addEventListener('click', () => {
     if(counter <= 0){
@@ -45,6 +53,8 @@ prevBtn.addEventListener('click', () => {
     SlideShow.style.transition = "transform 0.4s ease-in-out";
     counter--;
     SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
+
+    // dosumen.getElementsByClassName("slides")[0].checked;
 })
 
 nextBtn.addEventListener('click', () => {
@@ -70,4 +80,9 @@ SlideShow.addEventListener('transitionend', ()=> {
         SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
     }
 });
+
+
+
+ 
+// radiobtn.checked = true;
 
