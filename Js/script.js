@@ -29,8 +29,8 @@ menu.addEventListener("click", () => {
 const SlideShow = document.querySelector('.slide_show__slide');
 const SlideShowImgs = document.querySelectorAll('.slide_show__slide img');
 
-const prevBtn = document.querySelector('.slide_show__btn1');
-const nextBtn = document.querySelector('.slide_show__btn2');
+const prevBtn = document.querySelector('.prev_btn');
+const nextBtn = document.querySelector('.next_btn');
 
 let counter = 1;
 const size = SlideShowImgs[0].clientWidth;
