@@ -32,7 +32,7 @@ const SlideShowImgs = document.querySelectorAll('.slide_show__slide img');
 const prevBtn = document.querySelector('.prev_btn');
 const nextBtn = document.querySelector('.next_btn');
 
-let counter = 1;
+let counter = 0;
 const size = SlideShowImgs[0].clientWidth;
 
 //TODO Checked problem!!!
@@ -46,7 +46,7 @@ const size = SlideShowImgs[0].clientWidth;
 
 
 prevBtn.addEventListener('click', () => {
-    if(counter <= 0){
+    if (counter <= 0) {
         return;
     }
 
@@ -54,35 +54,68 @@ prevBtn.addEventListener('click', () => {
     counter--;
     SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
 
-    // dosumen.getElementsByClassName("slides")[0].checked;
+    console.log(counter);  
+    
+        //TODO -- Full Error
+
+        if (counter == 2) {
+            document.getElementById("radio1").checked = true;
+        }
+    
+        if (counter == 3) {
+            document.getElementById("radio2").checked = true;
+        }
+    
+        if (counter == 4) {
+            document.getElementById("radio3").checked = true;
+        }
+    
+        if (counter == 5) {
+            document.getElementById("radio4").checked = true;
+        }
+
 })
 
 nextBtn.addEventListener('click', () => {
-    if(counter >= SlideShowImgs.length - 1)
-    {
+
+    if (counter >= SlideShowImgs.length - 1) {
         return;
     }
     SlideShow.style.transition = "transform 0.4s ease-in-out";
     counter++;
     SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
+    console.log(counter);  
+
+    //TODO -- Error
+    if (counter == 2) {
+        document.getElementById("radio1").checked = true;
+    }
+
+    if (counter == 3) {
+        document.getElementById("radio2").checked = true;
+    }
+
+    if (counter == 4) {
+        document.getElementById("radio3").checked = true;
+    }
+
+    if (counter == 5) {
+        document.getElementById("radio4").checked = true;
+    }
 })
 
-SlideShow.addEventListener('transitionend', ()=> {
-    if(SlideShowImgs[counter].id === 'lastClone'){
+
+
+SlideShow.addEventListener('transitionend', () => {
+    if (SlideShowImgs[counter].id === 'lastClone') {
         SlideShow.style.transition = "none";
         counter = SlideShowImgs.length - 2;
         SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
     }
 
-    if(SlideShowImgs[counter].id === 'firstClone'){
+    if (SlideShowImgs[counter].id === 'firstClone') {
         SlideShow.style.transition = "none";
         counter = SlideShowImgs.length - counter;
         SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
     }
 });
-
-
-
- 
-// radiobtn.checked = true;
-

@@ -160,13 +160,25 @@ body {
           animation: transitionIn 1.5s;
 }
 
+.slider {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  height: 40px;
+  z-index: 20;
+  bottom: 2%;
+}
+
 .p1 {
-  position: relative;
-  left: 40%;
-  top: 720px;
-  margin-left: 40px;
-  width: 30px;
-  height: 30px;
+  left: 0%;
+  top: -50%;
+  -webkit-transform: translate(0%, 20%);
+          transform: translate(0%, 20%);
+  left: 0px;
+  margin-right: 30px;
+  margin-left: 15px;
+  width: 25px;
+  height: 25px;
 }
 
 @-webkit-keyframes transitionIn {
