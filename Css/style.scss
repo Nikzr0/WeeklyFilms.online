@@ -184,8 +184,8 @@ background-color: $primary_2;
     animation: transitionIn 1.5s;
 }
 
-// Slide Show Points
-.slider{
+// Slide Show Indicators
+.slider__container{
     position: absolute;
     left: 30%;
     width: 40%;
@@ -195,7 +195,7 @@ background-color: $primary_2;
     // border: 2px solid black;
 }
 
-.p1{
+.slide_show__indicators{
     left: 0%;
     top: -50%;
     transform: translate(-0%,20%);
@@ -282,7 +282,7 @@ background-color: $primary_2;
         }
     
         &__btn, &__container{
-            top: 135px;
+            top: 132px;
 
             width: 100%;
             left: 0%;
@@ -296,7 +296,7 @@ background-color: $primary_2;
         }
         
         &__btn{
-            border: 2px solid black;
+            border: 1.9px solid black;
         }
 
         &__btn{
@@ -346,5 +346,24 @@ background-color: $primary_2;
     .next_btn_container{
         right: 8%;
         top: 48%;
+    }
+
+    .slider__container{
+        left: 30%;
+        width: 40%;
+        height: 35px;
+        z-index: 20;
+        bottom: 0%;
+        // border: 2px solid black;
+    }
+    
+    .slide_show__indicators{
+        left: 0%;
+        top: -50%;
+        left: 0px;
+        margin-right: 10px;
+        margin-left: 8px;
+        width: 15px;
+        height: 25px;
     }
 };

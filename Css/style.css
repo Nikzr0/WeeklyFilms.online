@@ -160,7 +160,7 @@ body {
           animation: transitionIn 1.5s;
 }
 
-.slider {
+.slider__container {
   position: absolute;
   left: 30%;
   width: 40%;
@@ -169,7 +169,7 @@ body {
   bottom: 2%;
 }
 
-.p1 {
+.slide_show__indicators {
   left: 0%;
   top: -50%;
   -webkit-transform: translate(0%, 20%);
@@ -259,7 +259,7 @@ body {
     height: 100%;
   }
   .navbar__btn, .navbar__container {
-    top: 135px;
+    top: 132px;
     width: 100%;
     left: 0%;
     -webkit-box-orient: vertical;
@@ -271,7 +271,7 @@ body {
             justify-content: center;
   }
   .navbar__btn {
-    border: 2px solid black;
+    border: 1.9px solid black;
   }
   .navbar__btn {
     position: relative;
@@ -309,6 +309,22 @@ body {
   .next_btn_container {
     right: 8%;
     top: 48%;
+  }
+  .slider__container {
+    left: 30%;
+    width: 40%;
+    height: 35px;
+    z-index: 20;
+    bottom: 0%;
+  }
+  .slide_show__indicators {
+    left: 0%;
+    top: -50%;
+    left: 0px;
+    margin-right: 10px;
+    margin-left: 8px;
+    width: 15px;
+    height: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
