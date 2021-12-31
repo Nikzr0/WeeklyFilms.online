@@ -25,6 +25,7 @@ menu.addEventListener("click", () => {
     }
 });
 
+//***********************************************************************
 
 const SlideShow = document.querySelector('.slide_show__slide');
 const SlideShowImgs = document.querySelectorAll('.slide_show__slide img');
@@ -32,17 +33,10 @@ const SlideShowImgs = document.querySelectorAll('.slide_show__slide img');
 const prevBtn = document.querySelector('.prev_btn');
 const nextBtn = document.querySelector('.next_btn');
 
-let counter = 0;
+let counter = 2;
 const size = SlideShowImgs[0].clientWidth;
 
-//TODO Checked problem!!!
 
-// const b1 = document.getElementById("radio1");
-// const b2 = document.getElementById("radio2");
-// const b3 = document.getElementById("radio3");
-// const b4 = document.getElementById("radio4");
-
-// const rr7 = document.getElementsByClassName("slides");
 
 
 prevBtn.addEventListener('click', () => {
@@ -55,22 +49,24 @@ prevBtn.addEventListener('click', () => {
     SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
 
     console.log(counter);  
-    
-        //TODO -- Full Error
 
         if (counter == 2) {
             document.getElementById("radio1").checked = true;
         }
-    
+
         if (counter == 3) {
             document.getElementById("radio2").checked = true;
         }
     
         if (counter == 4) {
+            document.getElementById("radio2").checked = true;
+        }
+    
+        if (counter == 0) {
             document.getElementById("radio3").checked = true;
         }
     
-        if (counter == 5) {
+        if (counter == 1) {
             document.getElementById("radio4").checked = true;
         }
 
@@ -86,7 +82,6 @@ nextBtn.addEventListener('click', () => {
     SlideShow.style.transform = "translateX(" + (-size * counter) + "px)";
     console.log(counter);  
 
-    //TODO -- Error
     if (counter == 2) {
         document.getElementById("radio1").checked = true;
     }
