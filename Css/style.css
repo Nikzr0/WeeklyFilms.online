@@ -160,6 +160,13 @@ body {
           animation: transitionIn 1.5s;
 }
 
+.slide_show__indicators {
+  position: relative;
+  background-color: #1e5d1e;
+  border: 2px solid #6b2626;
+  z-index: 99;
+}
+
 .slider__container {
   position: absolute;
   left: 30%;

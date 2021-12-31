@@ -31,7 +31,6 @@ body{
 background-color: $primary_2;
 }
 
-
 // Navbar
 .navbar{
     position: fixed;
@@ -206,16 +205,16 @@ background-color: $primary_2;
     height: 25px;
 }
 
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: rotateX(-18deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotateX(0);
-    }
-};
+// @keyframes transitionIn {
+//     from {
+//         opacity: 0;
+//         transform: rotateX(-18deg);
+//     }
+//     to {
+//         opacity: 1;
+//         transform: rotateX(0);
+//     }
+// };
 
 @media (max-width: 1600px){
     .navbar{
