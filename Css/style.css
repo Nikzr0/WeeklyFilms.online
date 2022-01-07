@@ -181,6 +181,32 @@ body {
   height: 25px;
 }
 
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-18deg);
+            transform: rotateX(-18deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(-18deg);
+            transform: rotateX(-18deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+  }
+}
+
 @media (max-width: 1600px) {
   .navbar__logo {
     width: 300px;
